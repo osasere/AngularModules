@@ -1,0 +1,29 @@
+<table border="1"
+        cellpadding ="10px"
+        cellspacing = "10px"
+        align="center" >
+        <thead style="background-color: blueviolet;">
+            <tr>
+                <th>SNO</th>
+                <th>NAME</th>
+                <th>CAPITAL</th>
+                <th>POPULATION</th>
+                <th>REGION</th>
+                <th>NATIVENAME</th>
+                <th>FLAG</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let x of result, let i = index" >
+                <td>{{i+1}} </td>
+                <td>{{x.name}}</td>
+                <td>{{x.capital}}</td>
+                <td>{{x.population}}</td>
+                <td>{{x.region}}</td>
+                <td>{{x.nativeName}}</td>
+                <td><img width="100px" height="50px" src="{{x.flag}}"></td>
+
+            </tr>
+        </tbody>
+    
+</table>
